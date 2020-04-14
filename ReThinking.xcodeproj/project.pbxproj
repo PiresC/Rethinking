@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA62C8F224208F6400889CBE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA62C8F124208F6400889CBE /* AVFoundation.framework */; };
+		BA62C8F624209D9400889CBE /* soundApp.wav in Resources */ = {isa = PBXBuildFile; fileRef = BA62C8F524209D9400889CBE /* soundApp.wav */; };
 		BA95918C240FD2BA00D35F93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95918B240FD2BA00D35F93 /* AppDelegate.swift */; };
 		BA95918E240FD2BA00D35F93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95918D240FD2BA00D35F93 /* SceneDelegate.swift */; };
 		BA959190240FD2BA00D35F93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95918F240FD2BA00D35F93 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 		BA95919B240FD2BB00D35F93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA959199240FD2BB00D35F93 /* LaunchScreen.storyboard */; };
 		BA9591A6240FD2BC00D35F93 /* ReThinkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9591A5240FD2BC00D35F93 /* ReThinkingTests.swift */; };
 		BA9591B1240FD2BC00D35F93 /* ReThinkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9591B0240FD2BC00D35F93 /* ReThinkingUITests.swift */; };
+		BA9591BF24109A8700D35F93 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9591BE24109A8700D35F93 /* UIViewExtensions.swift */; };
+		BAAA2CBA241A3B1700C16C04 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAA2CB9241A3B1700C16C04 /* SubViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA62C8F124208F6400889CBE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BA62C8F524209D9400889CBE /* soundApp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = soundApp.wav; sourceTree = "<group>"; };
 		BA959188240FD2BA00D35F93 /* ReThinking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReThinking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA95918B240FD2BA00D35F93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA95918D240FD2BA00D35F93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +57,8 @@
 		BA9591AC240FD2BC00D35F93 /* ReThinkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReThinkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9591B0240FD2BC00D35F93 /* ReThinkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReThinkingUITests.swift; sourceTree = "<group>"; };
 		BA9591B2240FD2BC00D35F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA9591BE24109A8700D35F93 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		BAAA2CB9241A3B1700C16C04 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA62C8F224208F6400889CBE /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA62C8F024208F6400889CBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA62C8F124208F6400889CBE /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA95917F240FD2BA00D35F93 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +102,7 @@
 				BA9591A4240FD2BC00D35F93 /* ReThinkingTests */,
 				BA9591AF240FD2BC00D35F93 /* ReThinkingUITests */,
 				BA959189240FD2BA00D35F93 /* Products */,
+				BA62C8F024208F6400889CBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,8 +122,11 @@
 				BA95918B240FD2BA00D35F93 /* AppDelegate.swift */,
 				BA95918D240FD2BA00D35F93 /* SceneDelegate.swift */,
 				BA95918F240FD2BA00D35F93 /* ViewController.swift */,
+				BAAA2CB9241A3B1700C16C04 /* SubViewController.swift */,
+				BA9591BE24109A8700D35F93 /* UIViewExtensions.swift */,
 				BA959191240FD2BA00D35F93 /* Main.storyboard */,
 				BA959197240FD2BB00D35F93 /* Assets.xcassets */,
+				BA62C8F524209D9400889CBE /* soundApp.wav */,
 				BA959199240FD2BB00D35F93 /* LaunchScreen.storyboard */,
 				BA95919C240FD2BB00D35F93 /* Info.plist */,
 				BA959194240FD2BA00D35F93 /* ReThinking.xcdatamodeld */,
@@ -237,6 +258,7 @@
 			files = (
 				BA95919B240FD2BB00D35F93 /* LaunchScreen.storyboard in Resources */,
 				BA959198240FD2BB00D35F93 /* Assets.xcassets in Resources */,
+				BA62C8F624209D9400889CBE /* soundApp.wav in Resources */,
 				BA959193240FD2BA00D35F93 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA959190240FD2BA00D35F93 /* ViewController.swift in Sources */,
+				BA9591BF24109A8700D35F93 /* UIViewExtensions.swift in Sources */,
 				BA95918C240FD2BA00D35F93 /* AppDelegate.swift in Sources */,
+				BAAA2CBA241A3B1700C16C04 /* SubViewController.swift in Sources */,
 				BA959196240FD2BA00D35F93 /* ReThinking.xcdatamodeld in Sources */,
 				BA95918E240FD2BA00D35F93 /* SceneDelegate.swift in Sources */,
 			);
@@ -439,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98J9762WWY;
 				INFOPLIST_FILE = ReThinking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,7 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = PiresC.ReThinking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -456,6 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98J9762WWY;
 				INFOPLIST_FILE = ReThinking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -464,7 +490,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = PiresC.ReThinking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
