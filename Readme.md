@@ -6,7 +6,7 @@ first time with Swift, this app was done for my first nano challenge at Apple De
 
 ## Screenshot
 ![Home Screen](https://github.com/PiresC/Rethinking/blob/master/Screenshot/Home%20page.png)
-x![Question Screen](https://github.com/PiresC/Rethinking/blob/master/Screenshot/Question%20page.png)
+![Question Screen](https://github.com/PiresC/Rethinking/blob/master/Screenshot/Question%20page.png)
 
 ## Built With
 
